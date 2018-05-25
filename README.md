@@ -1,4 +1,3 @@
-# facs
 Facs Project
 ============
 
