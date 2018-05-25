@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- CDN styles for this template -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">	
+	<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Navigation Top Horizontal -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light nav-top">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		  <ul class="navbar-nav mr-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link 1</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link 2</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link 3</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link 4</a>
+			  </li>
+		  </ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+		  <div class="nav-sidebar">
+			<!-- Navigation SideBar -->
+			<div class="navbar nav-side">
+			  <a href="#">Link 5</a>
+			  <a href="#">Link 6</a>
+			  <a href="#">Link 7</a>
+			  <a href="#">Link 8</a>
+			  <a href="#">Link 9</a>
+			</div>
+		  </div>
+		  <!-- The flexible grid (content) -->  
+		  <div class="main">
+			<div class="row">
+				<div class="col-md-2 offset-md-10 ac-icon">
+					<div style="color:#333;">
+						<i class="fas fa-print"></i>
+						<i class="fas fa-font" style="color:#999"></i>				
+						<i class="fas fa-font fa-lg"></i>
+					</div>
+				</div>
+			</div>
+			<h2>Find an Event</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id massa lobortis, porttitor lectus eu, aliquet ipsum. Nam diam tortor, rutrum eget dignissim sed, ultricies venenatis urna. Fusce vitae lorem sodales, imperdiet eros quis, facilisis risus. Aenean cursus lectus non tincidunt ultricies.</p>
+			<p>Run a search below to find an event near you.</p>
+			<br />
+			<form class="needs-validation" novalidate>
+				<div class="form-group row">
+					<label for="Search" class="col-md-1 col-form-label">Search:</label>
+					<div class="col-md-8 col-sm-12">
+						<input type="text" class="form-control" id="search" placeholder="" value="">
+					</div>
+				</div>
+				<div class="form-group row">				
+					<label for="District" class="col-md-1 col-form-label">District:</label>
+					<div class="col-md-5">				
+						<select class="custom-select" id="district">
+						  <option value="">-- Leave Empty --</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="Date" class="col-md-1 col-form-label">Date:</label>			
+					<div class="date col-md-5">
+						<input type="date" class="form-control" id="date-input" value="">		
+					</div>
+				</div>
+				  <div class="col-md-3 mb-3">
+					<!-- <button class="btn btn-md btn-block" id="search-btn" type="submit">Search</button> -->
+					<button class="btn btn-outline-success" id="search-btn" type="submit">Search</button>
+				  </div>
+
+			</form>
+			
+			<!-- display search results -->
+			<div class="row margin-right-20 search-results">
+				<hr class="col-md-12 mb-6">
+					<div class="col-md-4 col-sm-12">
+						<span class="label">Organisation:</span>
+						<p class='organisation'></p>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<span class="label">Event:</span>
+						<p class='event'></p>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<span class="label">Date:</span>
+						<p class='date-info'></p>
+					</div>
+					
+					<div class="col-md-4 col-sm-12">
+						<span class="label">Location:</span>
+						<p class='location'></p>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<span class="label">Phone:</span>
+						<p>(02) 98765432</p>
+					</div>
+					<div class="col-md-4 col-sm-12 no-result"></div>
+					<div class="col-md-4 col-sm-12">
+						<span class="label">Type:</span>
+						<p class='type'></p>			
+					</div>
+				<hr class="col-md-12 mb-6">
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="navbar nav-bottom">
+			<div class="navbar-group">
+			  <a href="#">Link 1 &#124;</a>
+			  <a href="#">Link 2</a>
+			</div>
+			<div class="navbar-group">
+			  <a href="#">Link 3 &#124</a>
+			  <a href="#">Link 4 &#124</a>
+			  <a href="#">Link 5</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- CDN script for this template -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>

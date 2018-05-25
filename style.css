@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+	font-size: 1em;
+    margin: 0;
+}
+
+/* Header/logo Title */
+
+/* Style the top navigation bar */
+.navbar {
+	padding: 0;
+    background-color: #8C299E;	/* dark violet */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #D5BADB;
+    color: black;
+}
+
+.nav-top {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#navbarText {
+	background-color: #8C299E;
+}
+#navbarText a {
+	color: #FFF;
+	padding: 14px 75px;
+}
+
+#navbarText a:hover {
+    color: black;
+}
+
+/* Sidebar column */
+.nav-sidebar {
+    flex: 25%;
+    padding: 20px 0;
+}
+
+/* Style the side navigation bar */
+.nav-side {
+	flex-direction: column;
+	align-items: normal;
+}
+.nav-side a {
+	padding: 12px 20px;
+	text-align: left;
+	border-bottom: 1px dotted #ccc;	
+}
+
+.page-nav {
+	display: none;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main h2 {
+	color: rgb(162,92,143);
+}
+
+/* Accessibility icons */
+.fa, .fas {
+	padding-right: 5px;
+}
+
+form label, .label {
+	font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #ddd;
+	margin-bottom: 0;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer .navbar {
+	height: 2.5em;
+}
+
+/* general margin */
+.margin-right-20 {
+	margin-right: 50px;	
+}
+
+/* Responsive layout - when the screen is less than 767px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+	.ac-icon {
+		text-align: right;
+		padding-right: 1.25em;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	form label {
+		margin-right: 1.25em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navbar.nav-bottom {
+		padding: 0 20px;
+	}
+}
